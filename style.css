@@ -1,0 +1,151 @@
+@import url('https://fonts.googleapis.com/css2?family=Londrina+Solid:wght@100;300;400;900&display=swap');
+
+:root {
+  --primary-color: #CCCCFF;
+  --secondary-color: #373737;
+  --primary-font: "Londrina Solid", sans-serif;
+}
+
+nav {
+  background-color: var(--primary-color);
+  border-radius: 20px;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+nav h1 {
+  color: var(--secondary-color);
+  white-space: nowrap;
+  font-family: var(--primary-font);
+  font-weight: 900;
+  font-style: normal;
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  gap: 20px;
+}
+
+nav li {
+  color: var(--secondary-color);
+  font-family: var(--primary-font);
+  font-weight: 900;
+  font-style: normal;
+}
+
+nav ul a {
+  text-decoration: none;
+  color: var(--secondary-color);
+  transition: color 1s ease;
+}
+
+nav ul a:hover {
+  color: darkblue;
+  text-decoration: underline;
+}
+
+html, body {
+  height: 100%;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+}
+
+.inputContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 2px;
+  background-color: var(--secondary-color);
+  padding: 20px;
+  gap: 10px;
+}
+
+#tskInput {
+  padding: 5px;
+  border: solid var(--primary-color) 5px;
+  border-radius: 10px;
+}
+
+#tskInput::placeholder {
+  font-family: var(--primary-font);
+}
+
+#tskAdd {
+  padding: 8px;
+  border-radius: 10px;
+  background-color: white;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  width: 100px;
+}
+
+footer {
+  background-color: var(--secondary-color);
+  padding: 50px 50px 50px 20px;
+  color: white;
+  display: flex;
+}
+
+footer p {
+  font-family: var(--primary-font);
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.tskContainer {
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  gap: 15px;
+}
+
+
+#ulTsk {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.newTsk {
+  background-color: var(--primary-color);
+  padding: 5px;
+  margin-top: 5px;
+  border: 3px solid #D6BEFA;
+  border-radius: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-family: var(--primary-font);
+  transition: opacity 0.1s ease;
+}
+
+.newTsk span {
+  margin-left: 20px;
+  color: var(--secondary-color);
+}
+
+.del {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  width: 80px;
+}
+
+.chckBtn {
+  padding: 5px;
+  border-radius: 10px;
+  background-color: white;
+  font-family: var(--primary-font);
+  color: var(--secondary-color);
+  width: 80px;
+}
