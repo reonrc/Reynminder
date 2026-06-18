@@ -32,6 +32,9 @@ function addTask(taskText) {
     setTimeout(function() {
       newTsk.remove();
     }, 300);
+    const index = tskArray.indexOf(taskText);
+    tskArray.splice(index, 1);
+    localStorage.setItem("tskArray", JSON.stringify(tskArray));
   });
   
   chckBtn.addEventListener("click", function() {
